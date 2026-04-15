@@ -19,12 +19,12 @@ public class teacup {
     }
 
     public static void main(String[] args) {
-        teacup greenteacup = new teacup("Green teacup");
+        teacup teacup = new teacup("Green teacup");
         System.out.println("There's a teacup! Let's go check it out.");
-        greenteacup.pickUp();
-        greenteacup.Inspect();
+        teacup.pickUp();
+        teacup.Inspect();
         System.out.println("I think I'm ready to put this down.");
-        greenteacup.putDown();
+        teacup.putDown();
         System.out.println("Let's see what else is around.");
     }
 }
