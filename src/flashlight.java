@@ -1,19 +1,10 @@
-public class flashlight {
+public class flashlight extends Item {
     
-    public String description;
     public boolean isLit;
 
     public flashlight(String description, boolean isLit){
-        this.description = description;
+        super(description);
         this.isLit = isLit;
-    }
-
-    public void pickUp(){
-        System.out.println("You picked up: " + this.description);
-    }
-
-    public void putDown(){
-        System.out.println("You put down: " + this.description);
     }
 
     public boolean turnOn(){

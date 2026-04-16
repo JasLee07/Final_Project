@@ -1,20 +1,10 @@
-public class teacup {
-    
-    public String description;
+public class teacup extends Item {
 
     public teacup(String description){
-        this.description = description;
+        super(description);
     }
 
-    public void pickUp(){
-        System.out.println("You picked up: " + this.description);
-    }
-
-    public void putDown(){
-        System.out.println("You put down: " + this.description);
-    }
-
-    public void Inspect(){
+    public void Smell(){
         System.out.println("The sweet aroma of the cup swirls into your nose. You start to feel...lightheaded and sick...what's in this tea?");
     }
 
@@ -22,7 +12,7 @@ public class teacup {
         teacup teacup = new teacup("Green teacup");
         System.out.println("There's a teacup! Let's go check it out.");
         teacup.pickUp();
-        teacup.Inspect();
+        teacup.Smell();
         System.out.println("I think I'm ready to put this down.");
         teacup.putDown();
         System.out.println("Let's see what else is around.");
