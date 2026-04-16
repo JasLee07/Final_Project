@@ -1,14 +1,18 @@
-public class character {
+public class Character {
 
     public String name;
     public int age;
-    public String currenRoom;
+    public String currentRoom;
 
 
-    public character(String name, int age, String currentRoom){
+    public Character(String name, int age, String currentRoom){
         this.name = name;
         this.age = age;
-        this.currenRoom = currentRoom;
+        this.currentRoom = currentRoom;
     }
 
+    @Override
+    public String toString() {
+        return this.name + " is " + this.age + " and can be found in: " + this.currentRoom;
+    }
 }

@@ -1,10 +1,6 @@
-
-
-
-public class player extends character {
+public class Player extends Character {
     
-    public player(String name, int age, String currentRoom){
+    public Player(String name, int age, String currentRoom){
         super(name, age, currentRoom);
-
     }
 }
