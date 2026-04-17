@@ -1,6 +1,7 @@
 public class Item {
     
     public String description = "<Unknown item>";
+    
     public Item(String description){
         if (description != null) { this.description = description; }
     }
