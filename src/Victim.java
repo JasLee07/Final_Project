@@ -9,5 +9,8 @@ public class Victim extends Character{
         System.out.println("They're...gone");
     }
     
-    
+    public static void main(String[] args) {
+        Victim Brock = new Victim("Brock", 26, "PurpleBedroom");
+        Brock.Interact();
+    }
 }

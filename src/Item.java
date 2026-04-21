@@ -22,5 +22,4 @@ public class Item {
         System.out.println("You put down: " + this.description);
     }
 
-
 }
