@@ -1,5 +1,4 @@
 public class NPC extends Character{
-    
     public boolean isSuspect;
     public boolean isCulprit;
 
