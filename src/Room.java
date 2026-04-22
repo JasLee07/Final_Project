@@ -17,12 +17,12 @@ public class Room {
 
     public void OpenDoor(){
         insideRoom = true;
-        System.out.println("You are inside " + this.roomName);
+        System.out.println("You are inside: " + this.roomName);
     }
 
     public void CloseDoor(){
         insideRoom = false;
-        System.out.println("You are leaving " + this.roomName);
+        System.out.println("You are leaving: " + this.roomName);
     }
 
     public void Inspect(){

@@ -15,6 +15,6 @@ public class NPC extends Character{
     public static void main(String[] args) {
         NPC Jim = new NPC("Jim", 32, "Bedroom 2", true, false);
         System.out.println("There's someone over there, maybe I should go talk to them");
-        Jim.Interact();
+        System.out.println(Jim.Interact());
     }
 }

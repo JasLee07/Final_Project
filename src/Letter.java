@@ -12,7 +12,7 @@ public class Letter extends Item {
 
     public static void main(String[] args) {
         Letter greenLetter = new Letter("Green Envelope");
-        greenLetter.read();
+        System.out.println(greenLetter.read());
         System.out.println("Spooky...");
     }
 }
