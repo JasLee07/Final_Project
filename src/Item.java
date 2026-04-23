@@ -9,6 +9,7 @@ public class Item {
     public String getDescription() {
         return this.description;
     }
+    
     @Override
     public String toString() {
         return "This is a: " + this.description;

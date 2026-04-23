@@ -28,5 +28,4 @@ public class Room {
     public void Inspect(){
         System.out.println("I wonder if there's anything in here...");
     }
-
 }
