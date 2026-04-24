@@ -9,7 +9,9 @@ public class Player extends Character {
     }
 
     public void Move(String currentRoom){
-
+        currentRoom = roomName;
+        System.out.println("You are now in: " + roomName);
+        System.out.println("You can inspect and look around here.");
     }
 
     public void addToInventory(Item item){

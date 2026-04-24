@@ -27,12 +27,12 @@ public class GameLoop{
 
     public static void main(String[] args) {
         GameLoop House = new GameLoop();
-        House.addRoom(new EntryHall("Entry Hall", true, false));
-        House.addRoom(new OrangeBedroom("Orange Bedroom", false, true));
-        House.addRoom(new GreenBedroom("Green Bedroom", false, true));
-        House.addRoom(new PurpleBedroom("Purple Bedroom", false, true));
-        House.addRoom(new Kitchen("Blue Kitchen", false, true));
-        House.addRoom(new diningRoom("Yellow Dining Room", false, true));
+        House.addRoom(new EntryHall("Entry Hall"));
+        House.addRoom(new OrangeBedroom("Orange Bedroom"));
+        House.addRoom(new GreenBedroom("Green Bedroom"));
+        House.addRoom(new PurpleBedroom("Purple Bedroom", true));
+        House.addRoom(new Kitchen("Blue Kitchen"));
+        House.addRoom(new diningRoom("Yellow Dining Room"));
         System.out.println(House);
     }
 }

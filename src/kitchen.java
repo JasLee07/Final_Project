@@ -1,7 +1,7 @@
 public class Kitchen extends Room {
 
-    public Kitchen(String roomName, boolean insideRoom, boolean outsideRoom){
-        super(roomName, insideRoom, outsideRoom);
+    public Kitchen(String roomName){
+        super(roomName);
     }
 
     @Override

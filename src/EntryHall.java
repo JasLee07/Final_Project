@@ -1,7 +1,7 @@
 public class EntryHall extends Room {
     
-    public EntryHall(String roomName, boolean insideRoom, boolean outsideRoom){
-        super(roomName, insideRoom, outsideRoom);
+    public EntryHall(String roomName){
+        super(roomName);
     }
 
     @Override
