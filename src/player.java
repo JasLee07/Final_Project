@@ -3,18 +3,18 @@ public class Player extends Character {
 
     ArrayList<Item> items;
     
-    public Player(String name, int age, String currentRoom, ArrayList<Item> items){
+    public Player(String name, int age, String currentRoom){
         super(name, age, currentRoom);
-        this.items = items;
+        items = new ArrayList<Item>();
     }
 
     public void Move(String currentRoom){
-        currentRoom = roomName;
+        roomName = currentRoom;
         System.out.println("You are now in: " + roomName);
         System.out.println("You can inspect and look around here.");
     }
 
-    public void addToInventory(Item item){
+    public void addToInventory(){
 
     }
 }
