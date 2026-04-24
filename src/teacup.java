@@ -1,6 +1,6 @@
-public class teacup extends Item {
+public class Teacup extends Item {
 
-    public teacup(String description){
+    public Teacup(String description){
         super(description);
     }
 
@@ -9,7 +9,7 @@ public class teacup extends Item {
     }
 
     public static void main(String[] args) {
-        teacup teacup = new teacup("Green teacup");
+        Teacup teacup = new Teacup("Green teacup");
         System.out.println("There's a teacup! Let's go check it out.");
         teacup.pickUp();
         teacup.Smell();

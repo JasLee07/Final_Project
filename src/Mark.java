@@ -9,5 +9,4 @@ public class Mark extends NPC {
         return this.name + ": I really didn't know much about her. I remember seeing her drinking tea in the common room though.";
     }
     
-    public
 }

@@ -27,9 +27,12 @@ public class GameLoop{
 
     public static void main(String[] args) {
         GameLoop House = new GameLoop();
-        House.addRoom(new OrangeBedroom("Orange Bedroom", false, false));
-        House.addRoom(new GreenBedroom("Green Bedroom", false, false));
-        House.addRoom(new PurpleBedroom("Purple Bedroom", false, false));
-        
+        House.addRoom(new EntryHall("Entry Hall", true, false));
+        House.addRoom(new OrangeBedroom("Orange Bedroom", false, true));
+        House.addRoom(new GreenBedroom("Green Bedroom", false, true));
+        House.addRoom(new PurpleBedroom("Purple Bedroom", false, true));
+        House.addRoom(new Kitchen("Blue Kitchen", false, true));
+        House.addRoom(new diningRoom("Yellow Dining Room", false, true));
+        System.out.println(House);
     }
 }
