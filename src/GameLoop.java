@@ -20,7 +20,7 @@ public class GameLoop{
         String roomString = "Here are a list of rooms you can go to!";
 
         for(int i = 0; i < this.rooms.size(); i++){
-            roomString += "\n  " + (i+1) + ". "+ this.rooms.get(i) + " (" + this.rooms.get(i) + ")";
+            roomString += "\n  " + (i+1) + ". "+ this.rooms.get(i);
         }
         return roomString;
     }
