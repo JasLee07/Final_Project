@@ -14,7 +14,7 @@ public class Player extends Character {
         System.out.println("You can inspect and look around here.");
     }
 
-    public void addToInventory(){
+    public void addToInventory(i){
 
     }
 }
