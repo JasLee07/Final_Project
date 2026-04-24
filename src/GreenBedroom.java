@@ -1,7 +1,7 @@
 public class GreenBedroom extends Room{
 
-    public GreenBedroom(String roomName, boolean insideRoom, boolean outsideRoom){
-        super(roomName, insideRoom, outsideRoom);
+    public GreenBedroom(String roomName){
+        super(roomName);
     }
 
     @Override
@@ -11,8 +11,7 @@ public class GreenBedroom extends Room{
     }
 
     public static void main(String[] args) {
-        GreenBedroom greenBedroom = new GreenBedroom("Green Bedroom", false, true);
-        greenBedroom.OpenDoor();
+        GreenBedroom greenBedroom = new GreenBedroom("Green Bedroom");
         greenBedroom.Inspect();
         Letter greenLetter = new Letter("Green Letter");
         greenLetter.pickUp();
