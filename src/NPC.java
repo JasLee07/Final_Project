@@ -8,13 +8,16 @@ public class NPC extends Character{
         this.isCulprit = isCulprit;
     }
 
-    public String Interact(){
+    public String interact(){
         return this.name + ": Hey! How are ya?";
     }
 
     public static void main(String[] args) {
-        NPC Jim = new NPC("Jim", 32, "Bedroom 2", true, false);
+        // NPC Jim = new NPC("Jim", 32, "Bedroom 2", true, false);
+        Mark mark = new Mark();
         System.out.println("There's someone over there, maybe I should go talk to them");
-        System.out.println(Jim.Interact());
+        // System.out.println(Jim.interact());
+        
+        System.out.println(mark.interact());
     }
 }

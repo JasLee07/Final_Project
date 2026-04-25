@@ -5,16 +5,34 @@ public class GameLoop{
     
     Scanner userInput;
     ArrayList<Room> rooms;
+    ArrayList<NPC> npcs;
+    Player player;
+    boolean isRunning;
+
 
     public GameLoop(){
         rooms = new ArrayList<Room>();
         userInput = new Scanner(System.in);
+        npcs = new ArrayList<NPC>();
+        player = new Player(null, 0, null);
+        this.isRunning = true;
     }
 
     public void addRoom(Room r){
         rooms.add(r);
     }
 
+    public void setup(Player player){
+
+    }
+
+    public String showOptions(){
+
+    }
+
+    public void takeTurn(){
+
+    }
     @Override
     public String toString(){
         String roomString = "Here are a list of rooms you can go to!";
