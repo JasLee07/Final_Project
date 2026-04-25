@@ -4,15 +4,17 @@ public class Letter extends Item {
         super(description);
     }
 
-    public String read(){
+    public void read(){
         System.out.println("You have opened the letter! Let's see what it says");
-        return "Beautiful views are the most deadly";
+        System.out.println( "Letter: Beautiful views are the most deadly");
+        System.out.println("Don't trust B.");
     }
     
 
     public static void main(String[] args) {
         Letter greenLetter = new Letter("Green Envelope");
-        System.out.println(greenLetter.read());
+        greenLetter.pickUp();
+        greenLetter.read();
         System.out.println("Spooky...");
     }
 }

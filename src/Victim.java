@@ -1,16 +1,18 @@
-public class Victim extends Character{
+public class Victim extends NPC{
 
-    public Victim(String name, int age, String roomName){
-        super(name, age, roomName);
+    public Victim(){
+        super("Brock", 23, "Purple Bedroom", false, false);
     }
 
-    public void Interact(){
+    @Override
+    public void interact(){
         System.out.println("...");
-        System.out.println("They're...gone");
+        System.out.println("He's...gone");
     }
     
     public static void main(String[] args) {
-        Victim Brock = new Victim("Brock", 26, "PurpleBedroom");
-        Brock.Interact();
+        Victim brock = new Victim();
+        brock.interact();
+    
     }
 }

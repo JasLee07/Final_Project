@@ -5,8 +5,8 @@ public class Mark extends NPC {
     }
 
     @Override
-    public String interact(){
-        return name + ": I really didn't know much about her. I remember seeing her drinking tea in the common room though.";
+    public void interact(){
+        System.out.println(name + "I really didn't know much about him. I remember seeing him drinking tea in the common room though.");
     }
     
 }

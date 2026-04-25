@@ -8,8 +8,8 @@ public class NPC extends Character{
         this.isCulprit = isCulprit;
     }
 
-    public String interact(){
-        return this.name + ": Hey! How are ya?";
+    public void interact(){
+        System.out.println(this.name + ": Hey! How are ya?");
     }
 
     public static void main(String[] args) {

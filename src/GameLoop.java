@@ -14,7 +14,6 @@ public class GameLoop{
         rooms = new ArrayList<Room>();
         userInput = new Scanner(System.in);
         npcs = new ArrayList<NPC>();
-        player = new Player(null, 0, null);
         this.isRunning = true;
     }
 
@@ -26,7 +25,7 @@ public class GameLoop{
 
     }
 
-    public String showOptions(){
+    public void showOptions(){
 
     }
 
