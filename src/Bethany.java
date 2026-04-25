@@ -1,7 +1,7 @@
 public class Bethany extends NPC {
     
     public Bethany(){
-        super("Bethany", 25, "Entry Hall", true, false);
+        super("Bethany", "Entry Hall", true, false);
     }
 
     @Override

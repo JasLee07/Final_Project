@@ -21,8 +21,10 @@ public class GameLoop{
         rooms.add(r);
     }
 
-    public void setup(Player player){
-
+    public void setup(NPC e){
+        System.out.println("Hello! Please enter your name:");
+        player = userInput.nextLine();
+        npcs.add(e);
     }
 
     public void showOptions(){

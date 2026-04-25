@@ -1,7 +1,7 @@
 public class Victim extends NPC{
 
     public Victim(){
-        super("Brock", 23, "Purple Bedroom", false, false);
+        super("Brock", "Purple Bedroom", false, false);
     }
 
     @Override

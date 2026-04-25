@@ -3,8 +3,8 @@ public class Player extends Character {
 
     ArrayList<Item> items;
     
-    public Player(String name, int age, String currentRoom){
-        super(name, age, currentRoom);
+    public Player(String name, String currentRoom){
+        super(name, currentRoom);
         items = new ArrayList<Item>();
     }
 

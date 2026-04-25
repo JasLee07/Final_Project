@@ -2,8 +2,8 @@ public class NPC extends Character{
     public boolean isSuspect;
     public boolean isCulprit;
 
-    public NPC(String name, int age, String currentRoom, boolean isSuspect, boolean isCulprit){
-        super(name, age, currentRoom);
+    public NPC(String name, String currentRoom, boolean isSuspect, boolean isCulprit){
+        super(name, currentRoom);
         this.isSuspect = isSuspect;
         this.isCulprit = isCulprit;
     }

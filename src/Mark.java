@@ -1,7 +1,7 @@
 public class Mark extends NPC {
 
     public Mark(){
-        super("Mark", 34, "Orange Bedroom", true, false);
+        super("Mark", "Orange Bedroom", true, false);
     }
 
     @Override
