@@ -15,6 +15,6 @@ public class GreenBedroom extends Room{
         greenBedroom.Inspect();
         Letter greenLetter = new Letter("Green Letter");
         greenLetter.pickUp();
-        System.out.println(greenLetter.read());
+        greenLetter.read();
     }
 }

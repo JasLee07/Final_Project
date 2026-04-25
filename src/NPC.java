@@ -17,7 +17,6 @@ public class NPC extends Character{
         Mark mark = new Mark();
         System.out.println("There's someone over there, maybe I should go talk to them");
         // System.out.println(Jim.interact());
-        
-        System.out.println(mark.interact());
+        mark.interact();
     }
 }
