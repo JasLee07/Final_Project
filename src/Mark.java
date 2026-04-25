@@ -6,7 +6,7 @@ public class Mark extends NPC {
 
     @Override
     public void interact(){
-        System.out.println(name + "I really didn't know much about him. I remember seeing him drinking tea in the common room though.");
+        System.out.println(name + ": I really didn't know much about him. I remember seeing him drinking tea in the common room though.");
     }
     
 }
