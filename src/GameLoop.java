@@ -6,6 +6,7 @@ public class gameLoop{
     Scanner userInput;
     ArrayList<room> rooms;
     ArrayList<npc> npcs;
+    ArrayList<item> items;
     player player;
     boolean isRunning;
 
@@ -14,6 +15,7 @@ public class gameLoop{
         rooms = new ArrayList<room>();
         userInput = new Scanner(System.in);
         npcs = new ArrayList<npc>();
+        items = new ArrayList<item>();
         this.isRunning = true;
     }
 
@@ -23,6 +25,10 @@ public class gameLoop{
 
     public void addnpc(npc n){
     npcs.add(n);
+    }
+
+    public void additem(item i){
+        items.add(i);
     }
 
     public void setup(){
@@ -38,6 +44,9 @@ public class gameLoop{
         addnpc(new brian());
         addnpc(new steph());
         addnpc(new victim());
+        additem(new teacup("Green teacup"));
+        additem(new flashlight("Blue flashlight", false));
+        additem(new letter("Green Letter"));
         System.out.println("Hello! Please enter your name:");
         String playerName = userInput.nextLine();
         player = new player(playerName, "Entry Hall");
@@ -49,6 +58,7 @@ public class gameLoop{
         System.out.println("Talk to someone");
         System.out.println("Check inventory");
         System.out.println("Quit");
+        System.out.println("Accuse someone");
     }
 
     public void takeTurn(){
@@ -69,18 +79,19 @@ public class gameLoop{
                 }
             }
             }
-            else if(input.equals("3")){
+        else if(input.equals("3")){
                 boolean foundSomeone = false;
                 for(npc n : npcs){
                     if(n.roomName.equals(player.roomName)){
                         n.interact();
                         foundSomeone = true;
                     }
-                    if(!foundSomeone){
-                        System.out.println("There is no one here to talk to.");
-                    }
                 }
-            }else if(input.equals("4")){
+                if(!foundSomeone){
+                    System.out.println("There is no one here to talk to.");
+                }
+            }
+        else if(input.equals("4")){
             if(player.items.isEmpty()){
                 System.out.println("Empty");
             }else{
@@ -88,9 +99,25 @@ public class gameLoop{
                     System.out.println(i);
                 }
             }
-        }else if(input.equals("5")){
+            }
+        else if(input.equals("5")){
             isRunning = false;
-        }else{
+            }
+        else if(input.equals("6")){
+            for(npc n : npcs){
+                System.out.println(n.toString());
+                System.out.println("Who did it?!");
+                String userChoice = userInput.nextLine();
+                if(userChoice.equals("Brian"))
+                {
+                    System.out.println("You solved the murder!");
+                    isRunning = false;
+                } else{
+                    System.out.println("Try investigating more");
+            }
+            }
+        }
+        else{
             System.out.println("Invalid option");
         }
     }
@@ -103,5 +130,4 @@ public class gameLoop{
         }
         return roomString;
     }
-
 }
