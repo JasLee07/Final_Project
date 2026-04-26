@@ -1,4 +1,4 @@
-public class orangeBedroom extends Room{
+public class orangeBedroom extends room{
     
     public orangeBedroom(String roomName){
         super(roomName);

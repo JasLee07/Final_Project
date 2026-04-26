@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class player extends Character {
+public class player extends character {
 
     ArrayList<item> items;
     

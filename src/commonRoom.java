@@ -1,4 +1,4 @@
-public class commonRoom extends Room {
+public class commonRoom extends room {
     
     public commonRoom(String roomName){
         super(roomName);

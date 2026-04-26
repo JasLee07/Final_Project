@@ -4,20 +4,20 @@ import java.util.ArrayList;
 public class gameLoop{
     
     Scanner userInput;
-    ArrayList<Room> rooms;
+    ArrayList<room> rooms;
     ArrayList<npc> npcs;
     player player;
     boolean isRunning;
 
 
     public gameLoop(){
-        rooms = new ArrayList<Room>();
+        rooms = new ArrayList<room>();
         userInput = new Scanner(System.in);
         npcs = new ArrayList<npc>();
         this.isRunning = true;
     }
 
-    public void addRoom(Room r){
+    public void addRoom(room r){
         rooms.add(r);
     }
 
@@ -26,19 +26,18 @@ public class gameLoop{
 }
 
     public void setup(){
-        gameLoop House = new gameLoop();
-        House.addRoom(new entryHall("Entry Hall"));
-        House.addRoom(new orangeBedroom("Orange Bedroom"));
-        House.addRoom(new greenBedroom("Green Bedroom"));
-        House.addRoom(new purpleBedroom("Purple Bedroom", true));
-        House.addRoom(new kitchen("Blue Kitchen"));
-        House.addRoom(new diningRoom("Yellow Dining Room"));
-        House.addRoom(new commonRoom("Burgunday Common Room"));
-        House.addnpc(new mark());
-        House.addnpc(new bethany());
-        House.addnpc(new brian());
-        House.addnpc(new steph());
-        House.addnpc(new victim());
+        addRoom(new entryHall("Entry Hall"));
+        addRoom(new orangeBedroom("Orange Bedroom"));
+        addRoom(new greenBedroom("Green Bedroom"));
+        addRoom(new purpleBedroom("Purple Bedroom", true));
+        addRoom(new kitchen("Blue Kitchen"));
+        addRoom(new diningRoom("Yellow Dining Room"));
+        addRoom(new commonRoom("Burgunday Common Room"));
+        addnpc(new mark());
+        addnpc(new bethany());
+        addnpc(new brian());
+        addnpc(new steph());
+        addnpc(new victim());
         System.out.println("Hello! Please enter your name:");
         String playerName = userInput.nextLine();
         new player(playerName, "Entry Hall");

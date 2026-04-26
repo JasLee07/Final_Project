@@ -1,4 +1,4 @@
-public class npc extends Character{
+public class npc extends character{
     public boolean isSuspect;
     public boolean isCulprit;
 

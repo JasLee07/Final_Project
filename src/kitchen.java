@@ -1,4 +1,4 @@
-public class kitchen extends Room {
+public class kitchen extends room {
 
     public kitchen(String roomName){
         super(roomName);

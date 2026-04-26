@@ -1,8 +1,8 @@
-public class Room {
+public class room {
     
     public String roomName;
 
-    public Room(String roomName){
+    public room(String roomName){
         this.roomName = roomName;
 
     }

@@ -1,4 +1,4 @@
-public class purpleBedroom extends Room {
+public class purpleBedroom extends room {
 
     public boolean hasBody;
 

@@ -1,4 +1,4 @@
-public class entryHall extends Room {
+public class entryHall extends room {
     
     public entryHall(String roomName){
         super(roomName);
