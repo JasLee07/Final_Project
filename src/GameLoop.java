@@ -40,11 +40,15 @@ public class gameLoop{
         addnpc(new victim());
         System.out.println("Hello! Please enter your name:");
         String playerName = userInput.nextLine();
-        player player = new player(playerName, "Entry Hall");
+        player = new player(playerName, "Entry Hall");
     }
 
     public void showOptions(){
-
+        System.out.println("Move to room");
+        System.out.println("Inspect room");
+        System.out.println("Talk to someone");
+        System.out.println("Check inventory");
+        System.out.println("Quit");
     }
 
     public void takeTurn(){
