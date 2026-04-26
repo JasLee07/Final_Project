@@ -40,7 +40,7 @@ public class gameLoop{
         addnpc(new victim());
         System.out.println("Hello! Please enter your name:");
         String playerName = userInput.nextLine();
-        new player(playerName, "Entry Hall");
+        player player = new player(playerName, "Entry Hall");
     }
 
     public void showOptions(){
