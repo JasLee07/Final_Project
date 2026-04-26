@@ -23,7 +23,7 @@ public class gameLoop{
 
     public void addnpc(npc n){
     npcs.add(n);
-}
+    }
 
     public void setup(){
         addRoom(new entryHall("Entry Hall"));
@@ -51,24 +51,43 @@ public class gameLoop{
         System.out.println("Quit");
     }
 
-    public void takeTurn(){
+    public void takeTurn(boolean foundSomeone){
         System.out.println("You are currently in: " + player.roomName);
         showOptions();
         String input = userInput.nextLine();
         if(input.equals("1")){
-
-        }else if(input.equals("2")){
-
-        }else if(input.equals("3")){
-
-        }else if(input.equals("4")){
-
+            System.out.println(toString());
+            System.out.println("Where would you like to go?");
+            String roomChoice = userInput.nextLine();
+            int index = Integer.parseInt(roomChoice) - 1;
+            player.Move(rooms.get(index).roomName);
+        }
+        else if(input.equals("2")){
+            for (room r : rooms) {
+                if (r.roomName.equals(player.roomName)) {
+                    r.Inspect();
+                }
+            }
+            foundSomeone = false
+            else if(input.equals("3")){
+                for(npc n : npcs){
+                    if(n.roomName.equals(player.roomName)){
+                        n.interact();
+                    }
+                }
+            }else if(input.equals("4")){
+            if(player.items.isEmpty()){
+                System.out.println("Empty");
+            }else{
+                for(item i : player.items){
+                    System.out.println(i);
+                }
+            }
         }else if(input.equals("5")){
-            
+            isRunning = false;
         }else{
             System.out.println("Invalid option");
         }
-
     }
 
     @Override
@@ -80,4 +99,5 @@ public class gameLoop{
         return roomString;
     }
 
+}
 }
