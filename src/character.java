@@ -1,10 +1,10 @@
-public class Character {
+public class character {
 
     public String name;
     public String roomName;
 
 
-    public Character(String name, String roomName){
+    public character(String name, String roomName){
         this.name = name;
         this.roomName = roomName;
     }

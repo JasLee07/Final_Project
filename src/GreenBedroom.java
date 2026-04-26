@@ -13,7 +13,7 @@ public class greenBedroom extends Room{
     public static void main(String[] args) {
         greenBedroom greenBedroom = new greenBedroom("Green Bedroom");
         greenBedroom.Inspect();
-        Letter greenLetter = new Letter("Green Letter");
+        letter greenLetter = new letter("Green Letter");
         greenLetter.pickUp();
         greenLetter.read();
     }

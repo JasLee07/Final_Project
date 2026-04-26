@@ -1,8 +1,8 @@
-public class Item {
+public class item {
     
     public String description = "<Unknown item>";
     
-    public Item(String description){
+    public item(String description){
         if (description != null) { this.description = description; }
     }
 

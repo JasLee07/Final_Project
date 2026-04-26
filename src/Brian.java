@@ -1,6 +1,6 @@
-public class Brian extends npc {
+public class brian extends npc {
 
-    public Brian(){
+    public brian(){
         super("Brian", "Common Space", false, true);
     }
     

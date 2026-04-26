@@ -1,6 +1,6 @@
-public class Steph extends npc {
+public class steph extends npc {
     
-    public Steph(){
+    public steph(){
         super("Steph", "Kitchen", true, false);
     }
 

@@ -1,6 +1,6 @@
-public class Victim extends npc{
+public class victim extends npc{
 
-    public Victim(){
+    public victim(){
         super("Brock", "Purple Bedroom", false, false);
     }
 
@@ -11,7 +11,7 @@ public class Victim extends npc{
     }
     
     public static void main(String[] args) {
-        Victim brock = new Victim();
+        victim brock = new victim();
         brock.interact();
     
     }

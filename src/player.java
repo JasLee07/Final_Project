@@ -1,11 +1,11 @@
 import java.util.ArrayList;
-public class Player extends Character {
+public class player extends Character {
 
-    ArrayList<Item> items;
+    ArrayList<item> items;
     
-    public Player(String name, String currentRoom){
+    public player(String name, String currentRoom){
         super(name, currentRoom);
-        items = new ArrayList<Item>();
+        items = new ArrayList<item>();
     }
 
     public void Move(String currentRoom){
@@ -14,7 +14,7 @@ public class Player extends Character {
         System.out.println("You can inspect and look around here.");
     }
 
-    public void addToInventory(Item n){
+    public void addToInventory(item n){
         items.add(n);
     }
 }

@@ -1,6 +1,6 @@
-public class Mark extends npc {
+public class mark extends npc {
 
-    public Mark(){
+    public mark(){
         super("Mark", "Orange Bedroom", true, false);
     }
 

@@ -1,4 +1,4 @@
-public class flashlight extends Item {
+public class flashlight extends item {
     
     public boolean isLit;
 

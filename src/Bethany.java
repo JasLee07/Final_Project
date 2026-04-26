@@ -1,6 +1,6 @@
-public class Bethany extends npc {
+public class bethany extends npc {
     
-    public Bethany(){
+    public bethany(){
         super("Bethany", "Entry Hall", true, false);
     }
 

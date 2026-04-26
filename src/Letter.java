@@ -1,6 +1,6 @@
-public class Letter extends Item {
+public class letter extends item {
 
-    public Letter(String description){
+    public letter(String description){
         super(description);
     }
 
@@ -12,7 +12,7 @@ public class Letter extends Item {
     
 
     public static void main(String[] args) {
-        Letter greenLetter = new Letter("Green Envelope");
+        letter greenLetter = new letter("Green Envelope");
         greenLetter.pickUp();
         greenLetter.read();
         System.out.println("Spooky...");
