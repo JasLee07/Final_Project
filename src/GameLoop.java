@@ -51,7 +51,7 @@ public class gameLoop{
         System.out.println("Quit");
     }
 
-    public void takeTurn(boolean foundSomeone){
+    public void takeTurn(){
         System.out.println("You are currently in: " + player.roomName);
         showOptions();
         String input = userInput.nextLine();
@@ -68,11 +68,16 @@ public class gameLoop{
                     r.Inspect();
                 }
             }
-            foundSomeone = false
+            }
             else if(input.equals("3")){
+                boolean foundSomeone = false;
                 for(npc n : npcs){
                     if(n.roomName.equals(player.roomName)){
                         n.interact();
+                        foundSomeone = true;
+                    }
+                    if(!foundSomeone){
+                        System.out.println("There is no one here to talk to.");
                     }
                 }
             }else if(input.equals("4")){
@@ -99,5 +104,4 @@ public class gameLoop{
         return roomString;
     }
 
-}
 }
