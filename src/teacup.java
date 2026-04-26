@@ -1,7 +1,7 @@
 public class teacup extends item {
 
-    public teacup(String description){
-        super(description);
+    public teacup(String description, String roomName){
+        super(description, roomName);
     }
 
     public void Smell(){

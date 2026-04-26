@@ -2,8 +2,8 @@ public class flashlight extends item {
     
     public boolean isLit;
 
-    public flashlight(String description, boolean isLit){
-        super(description);
+    public flashlight(String description, String roomName, boolean isLit){
+        super(description, roomName);
         this.isLit = isLit;
     }
 

@@ -1,9 +1,11 @@
 public class item {
     
     public String description = "<Unknown item>";
+    public String roomName;
     
-    public item(String description){
+    public item(String description, String roomName){
         if (description != null) { this.description = description; }
+        this.roomName = roomName;
     }
 
     public String getDescription() {

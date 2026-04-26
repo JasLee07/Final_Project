@@ -44,9 +44,9 @@ public class gameLoop{
         addnpc(new brian());
         addnpc(new steph());
         addnpc(new victim());
-        additem(new teacup("Green teacup"));
-        additem(new flashlight("Blue flashlight", false));
-        additem(new letter("Green Letter"));
+        additem(new teacup("Green teacup", "Common Space"));
+        additem(new flashlight("Blue flashlight", "Yellow Dining Room", false));
+        additem(new letter("Green Letter", "Green Bedroom"));
         System.out.println("Hello! Please enter your name:");
         String playerName = userInput.nextLine();
         player = new player(playerName, "Entry Hall");
