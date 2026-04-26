@@ -54,16 +54,16 @@ public class gameLoop{
     public void takeTurn(){
         System.out.println("You are currently in: " + player.roomName);
         showOptions();
-        userInput.nextInt();
-        if(userInput == 1){
+        String input = userInput.nextLine();
+        if(input.equals("1")){
 
-        }else if(userInput == 2){
+        }else if(input.equals("2")){
 
-        }else if(userInput == 3){
+        }else if(input.equals("3")){
 
-        }else if(userInput == 4){
+        }else if(input.equals("4")){
 
-        }else if(userInput == 5){
+        }else if(input.equals("5")){
             
         }else{
             System.out.println("Invalid option");
