@@ -1,6 +1,6 @@
-public class OrangeBedroom extends Room{
+public class orangeBedroom extends Room{
     
-    public OrangeBedroom(String roomName){
+    public orangeBedroom(String roomName){
         super(roomName);
         
     }

@@ -1,8 +1,8 @@
-public class NPC extends Character{
+public class npc extends Character{
     public boolean isSuspect;
     public boolean isCulprit;
 
-    public NPC(String name, String currentRoom, boolean isSuspect, boolean isCulprit){
+    public npc(String name, String currentRoom, boolean isSuspect, boolean isCulprit){
         super(name, currentRoom);
         this.isSuspect = isSuspect;
         this.isCulprit = isCulprit;
@@ -17,6 +17,5 @@ public class NPC extends Character{
         Mark mark = new Mark();
         System.out.println("There's someone over there, maybe I should go talk to them");
         // System.out.println(Jim.interact());
-        mark.interact();
     }
 }

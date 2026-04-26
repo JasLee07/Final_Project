@@ -1,6 +1,6 @@
-public class GreenBedroom extends Room{
+public class greenBedroom extends Room{
 
-    public GreenBedroom(String roomName){
+    public greenBedroom(String roomName){
         super(roomName);
     }
 
@@ -11,7 +11,7 @@ public class GreenBedroom extends Room{
     }
 
     public static void main(String[] args) {
-        GreenBedroom greenBedroom = new GreenBedroom("Green Bedroom");
+        greenBedroom greenBedroom = new greenBedroom("Green Bedroom");
         greenBedroom.Inspect();
         Letter greenLetter = new Letter("Green Letter");
         greenLetter.pickUp();

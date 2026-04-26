@@ -1,4 +1,4 @@
-public class Victim extends NPC{
+public class Victim extends npc{
 
     public Victim(){
         super("Brock", "Purple Bedroom", false, false);

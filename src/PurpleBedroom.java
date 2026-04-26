@@ -1,8 +1,8 @@
-public class PurpleBedroom extends Room {
+public class purpleBedroom extends Room {
 
     public boolean hasBody;
 
-    public PurpleBedroom(String roomName, boolean hasBody){
+    public purpleBedroom(String roomName, boolean hasBody){
         super(roomName);
         this.hasBody = true;
     }
@@ -15,7 +15,7 @@ public class PurpleBedroom extends Room {
     }
 
     public static void main(String[] args) {
-        PurpleBedroom purpleBedroom = new PurpleBedroom("Purple Bedroom", true);
+        purpleBedroom purpleBedroom = new purpleBedroom("Purple Bedroom", true);
         purpleBedroom.Inspect();
         System.out.println("I need to figure out what's going on.");
     }
