@@ -1,6 +1,6 @@
-public class EntryHall extends Room {
+public class entryHall extends Room {
     
-    public EntryHall(String roomName){
+    public entryHall(String roomName){
         super(roomName);
     }
 
