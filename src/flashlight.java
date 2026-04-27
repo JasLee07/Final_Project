@@ -27,14 +27,4 @@ public class flashlight extends item {
     }
     
     */
-
-    public static void main(String[] args) {
-        flashlight myFlashlight = new flashlight("Green flashlight", false);
-        System.out.println("Hm, it's hard to see. Let's use the flashlight nearby");
-        myFlashlight.pickUp();
-        myFlashlight.turnOn();
-        System.out.println("Let's see what's around this area now!");
-        System.out.println("I've looked around enough, let's turn this off");
-        myFlashlight.turnOff();
-    }
 }

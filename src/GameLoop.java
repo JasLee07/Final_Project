@@ -59,6 +59,7 @@ public class gameLoop{
         System.out.println("Check inventory");
         System.out.println("Quit");
         System.out.println("Accuse someone");
+        System.out.println("Pick up item");
     }
 
     public void takeTurn(){
@@ -106,17 +107,37 @@ public class gameLoop{
         else if(input.equals("6")){
             for(npc n : npcs){
                 System.out.println(n.toString());
-                System.out.println("Who did it?!");
-                String userChoice = userInput.nextLine();
-                if(userChoice.equals("Brian"))
-                {
-                    System.out.println("You solved the murder!");
-                    isRunning = false;
-                } else{
-                    System.out.println("Try investigating more");
             }
+            System.out.println("Who did it?!");
+            String userChoice = userInput.nextLine();
+            if(userChoice.equals("Brian"))
+            {
+                System.out.println("You solved the murder!");
+                isRunning = false;
+            } else{
+                System.out.println("Try investigating more");
             }
+            
         }
+        else if(input.equals("7")){
+            boolean foundItem = false;
+            for(int i = 0; i < items.size(); i++){
+                if(items.get(i).roomName.equals(player.roomName)){
+                    System.out.println((i+1) + ". " + items.get(i).description);
+                    foundItem = true;
+                }
+            }
+            if(!foundItem){
+                System.out.println("There is nothing here to pick up.");
+            } else {
+                System.out.println("Which item would you like to pick up?");
+                String itemChoice = userInput.nextLine();
+                int index = Integer.parseInt(itemChoice) - 1;
+                items.get(index).pickUp();
+                player.addToInventory(items.get(index));
+                items.get(index).roomName = "inventory";
+            }
+    }
         else{
             System.out.println("Invalid option");
         }
