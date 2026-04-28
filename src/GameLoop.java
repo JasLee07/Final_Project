@@ -139,10 +139,6 @@ public class gameLoop{
                     boolean pickedUp = true;
                     }
                 }       
-                // int index = Integer.parseInt(itemChoice) - 1;
-                // items.get(index).pickUp();
-                // player.addToInventory(items.get(index));
-                // items.get(index).roomName = "inventory";
             }
         }
         else{
