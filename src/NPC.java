@@ -11,11 +11,4 @@ public class npc extends character{
     public void interact(){
         System.out.println(this.name + ": Hey! How are ya?");
     }
-
-    public static void main(String[] args) {
-        // NPC Jim = new NPC("Jim", 32, "Bedroom 2", true, false);
-        mark mark = new mark();
-        System.out.println("There's someone over there, maybe I should go talk to them");
-        // System.out.println(Jim.interact());
-    }
 }

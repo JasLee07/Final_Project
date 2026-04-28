@@ -8,6 +8,6 @@ public class commonRoom extends room {
     public void Inspect(){
         System.out.println("I wonder if there's anything in here...");
         System.out.println("Oh, looks like someone is here.");
-        System.out.println("Oh, it seems there's a flashlight here...could be useful.");
+        System.out.println("Oh, it seems something was left here (Teacup).");
     }
 }

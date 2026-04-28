@@ -13,10 +13,4 @@ public class purpleBedroom extends room {
         System.out.println("Wait...is that-");
         System.out.println("You've discovered...a bloody body");
     }
-
-    public static void main(String[] args) {
-        purpleBedroom purpleBedroom = new purpleBedroom("Purple Bedroom", true);
-        purpleBedroom.Inspect();
-        System.out.println("I need to figure out what's going on.");
-    }
 }

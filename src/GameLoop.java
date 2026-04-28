@@ -47,7 +47,7 @@ public class gameLoop{
         additem(new teacup("Green teacup", "Common Space"));
         additem(new flashlight("Blue flashlight", "Yellow Dining Room", false));
         additem(new letter("Green Letter", "Green Bedroom"));
-        System.out.println("Hello! Please enter your name:");
+        System.out.println("Please enter your name:");
         String playerName = userInput.nextLine();
         player = new player(playerName, "Entry Hall");
     }
@@ -130,14 +130,20 @@ public class gameLoop{
             if(!foundItem){
                 System.out.println("There is nothing here to pick up.");
             } else {
-                System.out.println("Which item would you like to pick up?");
+                System.out.println("What would you like to pick up?");
                 String itemChoice = userInput.nextLine();
-                int index = Integer.parseInt(itemChoice) - 1;
-                items.get(index).pickUp();
-                player.addToInventory(items.get(index));
-                items.get(index).roomName = "inventory";
+                for(item currentItem : items){
+                    if(currentItem.roomName.equals(player.roomName) && currentItem.description.equalsIgnoreCase(itemChoice)){
+                    currentItem.pickUp();
+                    player.addToInventory(currentItem);
+                    }
+                }       
+                // int index = Integer.parseInt(itemChoice) - 1;
+                // items.get(index).pickUp();
+                // player.addToInventory(items.get(index));
+                // items.get(index).roomName = "inventory";
             }
-    }
+        }
         else{
             System.out.println("Invalid option");
         }
