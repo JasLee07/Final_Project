@@ -1,7 +1,7 @@
 public class steph extends npc {
     
     public steph(){
-        super("Steph", "Kitchen", true, false);
+        super("Steph", "Blue Kitchen", true, false);
     }
 
     @Override
