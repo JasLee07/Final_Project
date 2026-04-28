@@ -1,7 +1,7 @@
 public class brian extends npc {
 
     public brian(){
-        super("Brian", "Common Space", false, true);
+        super("Brian", "Burgunday Common Room", false, true);
     }
     
     @Override
