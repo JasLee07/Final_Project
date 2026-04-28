@@ -136,6 +136,7 @@ public class gameLoop{
                     if(currentItem.roomName.equals(player.roomName) && currentItem.description.equalsIgnoreCase(itemChoice)){
                     currentItem.pickUp();
                     player.addToInventory(currentItem);
+                    boolean pickedUp = true;
                     }
                 }       
                 // int index = Integer.parseInt(itemChoice) - 1;
