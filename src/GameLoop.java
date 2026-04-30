@@ -10,7 +10,6 @@ public class gameLoop{
     player player;
     boolean isRunning;
 
-
     public gameLoop(){
         rooms = new ArrayList<room>();
         userInput = new Scanner(System.in);
@@ -110,7 +109,7 @@ public class gameLoop{
             }
             System.out.println("Who did it?!");
             String userChoice = userInput.nextLine();
-            if(userChoice.equals("Brian"))
+            if(userChoice.equalsIgnoreCase("Brian"))
             {
                 System.out.println("You solved the murder!");
                 isRunning = false;
