@@ -1,0 +1,1 @@
+This is the cheatsheet for the video game. The way to play the game and navigate the house is through using the numbers 1-7. When the game starts, you can click on the number to do an action. There isn't much explnanation further than that, the action correlates with a number for easy access. To pick up an item, you just type the items name.

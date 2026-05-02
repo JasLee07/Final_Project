@@ -1,0 +1,1 @@
+This is the cheatsheet for the video game
